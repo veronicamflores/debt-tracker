@@ -9,7 +9,7 @@ let schema = new Schema({
     debtTotal: { type: Number, required: true },
     debtPaid: { type: Number, required: true, default: 0 },
     created: { type: Date, default: Date.now(), required: true },
-    userId: { type: ObjectId, ref: 'User', required: true },
+    authorId: { type: ObjectId, ref: 'User', required: true },
 
 })
 
