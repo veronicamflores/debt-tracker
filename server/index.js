@@ -37,8 +37,8 @@ server.use((req, res, next) => {
 })
 
 //ROUTES 
-let workoutRoutes = require('./server-assets/routes/workout-routes')
-server.use('/api/workouts', workoutRoutes)
+let debtRoutes = require('./server-assets/routes/debt-route')
+server.use('/api/debt', debtRoutes)
 
 //Catch all
 server.get('*', (req, res, next) => {
